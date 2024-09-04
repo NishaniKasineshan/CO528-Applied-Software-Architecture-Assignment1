@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book Library Management</h1>
+
+    <!-- Add Book -->
+    <div class="section">
+        <h2>Add Book</h2>
+        <form id="addBookForm">
+            <label for="addCustomId">ID:</label>
+            <input type="text" id="addCustomId" required>
+
+            <label for="addTitle">Title:</label>
+            <input type="text" id="addTitle" required>
+
+            <label for="addAuthor">Author:</label>
+            <input type="text" id="addAuthor" required>
+
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <!-- Get All Books -->
+    <div class="section">
+        <h2>Get All Books</h2>
+        <button id="getAllBooks">Fetch Books</button>
+        <ul id="booksList"></ul>
+    </div>
+
+    <!-- Get Book by ID -->
+    <div class="section">
+        <h2>Get Book by ID</h2>
+        <label for="getBookId">ID:</label>
+        <input type="text" id="getBookId">
+        <button id="fetchBookById">Fetch Book</button>
+        <div id="bookDetails"></div>
+    </div>
+
+    <!-- Update Book by ID -->
+    <div class="section">
+        <h2>Update Book by ID</h2>
+        <form id="updateBookForm">
+            <label for="updateCustomId">ID:</label>
+            <input type="text" id="updateCustomId" required>
+
+            <label for="updateTitle">Title:</label>
+            <input type="text" id="updateTitle" required>
+
+            <label for="updateAuthor">Author:</label>
+            <input type="text" id="updateAuthor" required>
+
+            <button type="submit">Update Book</button>
+        </form>
+    </div>
+
+    <!-- Delete Book by ID -->
+    <div class="section">
+        <h2>Delete Book by ID</h2>
+        <label for="deleteBookId">ID:</label>
+        <input type="text" id="deleteBookId">
+        <button id="deleteBookById">Delete Book</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
